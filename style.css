@@ -22,7 +22,7 @@
   --card-padding: 1.8rem;
   --padding-1: 1.2rem;
 
-  /*--box-shadow: 0 2rem 3rem var(--color-light);*/
+  --box-shadow-1: 0 2rem 3rem var(--color-light);
 }
 .dark-theme-variables {
   /* --color-background: #181a1e; */
@@ -30,7 +30,7 @@
   --color-dark: #edeffd;
   --color-dark-variant: #a3bdcc;
   --color-light: rgba(0, 0, 0, 8.8);
-  --box-shadow: 0 2rem 3rem var(--color-light);
+  --box-shadow: 0 2rem 3rem red;
   --color-info-light: #121212;
   --color-span: #edeffd;
 }
@@ -117,6 +117,14 @@ nav .nav-items {
 nav .nav-items:hover {
   color: #8322b3;
 }
+a:hover {
+  color: #8322b3;
+  margin-left: -2px;
+  transition: all 300ms ease;
+}
+a:visited {
+color: var(--color-card);
+}
 nav .nav-items ul {
   display: flex;
   gap: 4rem;
@@ -133,11 +141,11 @@ nav .nav-items ul > li a {
 a.active {
   color: var(--color-card);
 } 
-nav .nav-items ul > li a.active::after {
-  color: var(--color-info-light);
+nav .nav-items ul > li a.active:after {
+  color: var(--color-info-light );
 }
-nav .nav-items ul > li a.active::before {
-  color: var(--color-white);
+nav .nav-items ul > li a.active:before {
+  color: var(--color-card);
 }
 nav .search {
   display: flex;
@@ -205,22 +213,20 @@ header .containers {
   right: 8rem;
 }
 header .containers .write-up {
-  /* display: none; */
   position: absolute;
-  right: -50px;
-  width: max-content;
-  /* display: block; */
+  right:  -72px;
+  width: 200px;
   font-size: 1.3em;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow-1);
   border-radius: 10px;
   padding: 2rem 3rem;
-  /* margin: 1rem; */
-  /* height: 150px; */
   align-items: center;
   justify-content: center;
   background: var(--color-secondary);
   line-height: 3rem;
   color: var(--color-info-light);
+  text-align: center;
+  z-index: 1;
 }
 header .container .write-up {
   flex: 1;
