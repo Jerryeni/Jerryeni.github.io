@@ -82,7 +82,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: none;
+  color: var(--color-white);
 }
 header {
   min-height: 200px;
@@ -131,10 +131,10 @@ nav .nav-items ul > li a {
   color: #f5f5f8;
 }
 a.active {
-  color: var(--color-white);
+  color: var(--color-card);
 } 
 nav .nav-items ul > li a.active::after {
-  color: var(--color-white);
+  color: var(--color-info-light);
 }
 nav .nav-items ul > li a.active::before {
   color: var(--color-white);
