@@ -76,7 +76,7 @@ body {
   right: 2px;
   text-decoration: none;
   z-index: 10;
-}
+}F
 #up i {
   color: var(--color-white);
 }
@@ -130,8 +130,11 @@ nav .nav-items ul > li {
 nav .nav-items ul > li a {
   color: #f5f5f8;
 }
-nav .nav-items ul > li a:after {
-  color:  var(--color-white);
+a.active {
+  color: var(--color-white);
+} 
+nav .nav-items ul > li a.active:after {
+  color: var(--color-white);
 }
 nav .search {
   display: flex;
