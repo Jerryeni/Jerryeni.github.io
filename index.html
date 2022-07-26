@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+    <!-- <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
+    <!-- <script src="script.js"></script> -->
+    <title>Portfolio</title>
+</head>
+
+<body x-data>
+    <div id="top"></div>
+    <header class="wow animate__fadeInUp" data-wow-duration="2s">
+        <nav>
+            <!-- flex -->
+            <div class="logo">
+                <h4><b><em>JTech</em> </b></h4>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li><a href="#about" data-link="about" class="navlink">About Us</a></li>
+                    <li><a href="#services" data-link="services" class="navlink">Services</a></li>
+                    <li><a href="#portfolio" data-link="portfolio" class="navlink">Portfolio</a></li>
+                    <li><a href="blog.html" data-link="blog" class="navlink">Blog</a></li>
+                    <li><a href="#contact" data-link="contact" class="navlink">Our team</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <form>
+                    <input type="search" name="search" placeholder="Search..">
+                </form>
+            </div>
+            <div class="menu" @click="$store.mobileNav.toggle()"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+        <div class="containers">
+            <div class="write-up" x-cloak x-show="$store.mobileNav.open" x-transition:enter.50ms
+                x-transition:leave.delay.600ms>
+                <ul>
+                    <li x-show="$store.mobileNav.open" x-transition:enter.delay.150ms x-transition:leave.delay.600ms><a
+                            href="#about" data-link="about" class="navlink">About Us</a></li>
+                    <li x-show="$store.mobileNav.open" x-transition:enter.delay.300ms x-transition:leave.delay.450ms><a
+                            href="#services" data-link="services" class="navlink">Services</a></li>
+                    <li x-show="$store.mobileNav.open" x-transition:enter.delay.450ms x-transition:leave.delay.300ms><a
+                            href="#portfolio" data-link="portfolio" class="navlink">Portfolio</a></li>
+                    <li x-show="$store.mobileNav.open" x-transition:enter.delay.600ms x-transition:leave.delay.150ms><a
+                            href="blog.html  " data-link="blog" class="navlink">Blog</a></li>
+                    <li x-show="$store.mobileNav.open" x-transition:enter.delay.750ms x-transition:leave.delay.100ms><a
+                            href="#contact" data-link="contact" class="navlink">Our team</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- flex -->
+        <div class="container wow animate__fadeInUp" data-wow-duration="3s">
+            <div class="write-up">
+                <!-- display block -->
+                <p><em>I'm <span>Jerry Eni</span> </em> </p>
+                <h1>A creative and professional <br> Frontend developer</h1>
+                <div><em>We build responsive and attractive websites that are very good to look at...</em></div><br>
+                <button>click me</button>
+            </div>
+            <div class="img-stack">
+                <img src="images/img.svg" alt="">
+
+            </div>
+        </div>
+    </header>
+    <section class="wow animate__fadeInUp" id="services" data-wow-duration="1s">
+        <div class="container">
+            <div class="text">
+                <h1>Services Provided for you</h1><br>
+                <p> We are best in rendering web services. below are the services we can render to you</p>
+            </div>
+            <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+                <div class="card">
+                    <img src="images/istockphoto-1292991881-170667a.jpg" alt="">
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores provident totam maxime veniam
+                        nisi repudiandae hic excepturi at molestias perferendis?</p>
+                </div>
+                <div class="card wow animate__fadeInUp" data-wow-duration="3s">
+                    <img src="images/index.jpeg" alt="">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores provident totam maxime veniam
+                        nisi repudiandae hic excepturi at molestias perferendis?</p>
+                </div>
+                <div class="card">
+                    <img src="images/pexels-pixabay-531880.jpg" alt="">
+                    <h3>Website Maintenance</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores provident totam maxime veniam
+                        nisi repudiandae hic excepturi at molestias perferendis?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wow animate__fadeInUp" id="portfolio" data-wow-duration="3s">
+        <!-- block -->
+        <div class="first">
+            <!-- flex -->
+            <div class="card">
+                <img src="images/pexels-photo-1229861.webp" alt="">
+            </div>
+            <div class="cards">
+                <div class="card-text">
+                    <p><em>we are the best..</em></p>
+                    <h2>A Leading Website and Software Company</h2>
+                </div>
+                <div class="second-card">
+                    <div class="card1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui esse, atque quia laboriosam
+                            incidunt perferendis quasi alias aspernatur eum doloremque?</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui esse, atque quia laboriosam
+                            incidunt perferendis quasi alias aspernatur eum doloremque?</p>
+                    </div>
+                    <div class="card2">
+                        <h3>Get the best <br> design and development <br> you can ever imagine</h3>
+                        <button>Contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="second wow animate__fadeInUp" data-wow-duration="3s" id="blog">
+        <div class="blog">
+            <h1>Our Latest Blog</h1>
+        </div>
+        <div class="cards">
+            <div class="card"><img src="images/brooke-cagle-1181672-unsplash-1200x673.jpg" alt="">
+                <div class="text2">
+                    <h3>Enjoy the best web experience <br>Make it look simple with JTech</h3>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, commodi cupiditate!
+                        Quaerat,
+                        quidem incidunt reiciendis quod perferendis nemo ipsa commodi.</h6>
+                    <button>Read more...</button>
+                </div>
+            </div>
+            <div class="card"><img src="images/istockphoto-1251629816-170667a.jpg" alt="">
+                <div class="text2">
+                    <h3>Enjoy the best web experience <br>Make it look simple with JTech</h3>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, commodi cupiditate!
+                        Quaerat,
+                        quidem incidunt reiciendis quod perferendis nemo ipsa commodi.</h6>
+                    <button>Read more...</button>
+                </div>
+            </div>
+            <div class="card"><img src="images/istockphoto-1292991881-170667a.jpg" alt="">
+                <div class="text2">
+                    <h3>Enjoy the best web experience <br>Make it look simple with JTech</h3>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, commodi cupiditate!
+                        Quaerat,
+                        quidem incidunt reiciendis quod perferendis nemo ipsa commodi.</h6>
+                    <button>Read more...</button>
+                </div>
+            </div>
+            <div class="card"><img src="images/pexels-hasan-albari-1229861.jpg" alt="">
+                <div class="text2">
+                    <h3>Enjoy the best web experience <br>Make it look simple with JTech</h3>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, commodi cupiditate!
+                        Quaerat,
+                        quidem incidunt reiciendis quod perferendis nemo ipsa commodi.</h6>
+                    <button>Read more...</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="wow animate__fadeInUp" data-wow-duration="1s" id="contact">
+        <div class="container">
+            <div class="text">
+                <p><em>We are here</em> </p>
+                <h1>Meet Our Team Members</h1><br>
+            </div>
+            <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+                <div class="gallery">
+                    <a target="_blank" href="images/05.jpg">
+                        <img src="images/05.jpg" alt="Forest" width="600" height="400">
+                    </a>
+                    <div class="desc">
+                        <h4> Goodness Eni</h4>
+                        <h6>Content Manager and social media manager</h6>
+                        <p>He is a prolific content creator and good at strategizing legit online contents that
+                            motivates people</p>
+
+                    </div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/07.jpg">
+                        <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/istockphoto-1251629816-170667a.jpg">
+                        <img src="images/02.jpg" alt="Mountains" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+                <div class="gallery">
+                    <a target="_blank" href="images/08.jpg">
+                        <img src="images/08.jpg" alt="Mountains" width="600" height="400">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="newsletter">
+        <!-- block -->
+        <div class="write">
+            <p><em>We are here</em> </p>
+            <h1>Subscribe to Our Newsletter</h1><br>
+        </div>
+
+        <form action="#">
+            <input type="email" placeholder="Enter your email here...">
+            <button>Subscribe now</button>
+        </form>
+        </div>
+    </section>
+    <a href="#top" id="up"><i class="fa-solid fa-arrow-up"></i></a>
+    <footer>
+        <div class="copyright">
+            <p>Copyright &copy; <span class="presentyr">
+                    <script>
+                        document.querySelector('.presentyr').innerHTML = new Date().getFullYear();
+                    </script>
+                </span> JTech &SmallCircle; All Right Reserved</p>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('mobileNav', {
+            open: false,
+
+            toggle() {
+                this.open = !this.open
+            }
+        })
+    })
+</script>
+<script>
+    new Splide('.splide').mount();
+</script>
+
+</html>

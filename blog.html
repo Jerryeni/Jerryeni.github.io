@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="blog.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+    <!-- <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
+    <!-- <script src="script.js"></script> -->
+    <title>Portfolio</title>
+</head>
+
+<body x-data>
+    <div id="top"></div>
+    <header class="wow animate__fadeInUp" data-wow-duration="2s">
+        <nav>
+            <!-- flex -->
+            <div class="logo">
+                <h4><b><em>JTech</em> </b></h4>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li><a href="#about" data-link="about" class="navlink">About Us</a></li>
+                    <li><a href="#services" data-link="services" class="navlink">Services</a></li>
+                    <li><a href="#portfolio" data-link="portfolio" class="navlink">Portfolio</a></li>
+                    <li><a href="#blog" data-link="blog" class="navlink">Blog</a></li>
+                    <li><a href="#contact" data-link="contact" class="navlink">Our team</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <form>
+                    <input type="search" name="search" placeholder="Search..">
+                </form>
+            </div>
+            <div class="menu" @click="$store.mobileNav.toggle()"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+        <div class="containers">
+            <div class="write-up" x-cloak x-show="$store.mobileNav.open" x-transition:enter.50ms
+                x-transition:leave.delay.600ms>
+                <ul>
+                    <li x-show="$store.mobileNav.open" x-transition:enter.delay.150ms x-transition:leave.delay.600ms><a
+                            href="#about" data-link="about" class="navlink">About Us</a></li>
+                    <li x-show="$store.mobileNav.open" x-transition:enter.delay.300ms x-transition:leave.delay.450ms><a
+                            href="#services" data-link="services" class="navlink">Services</a></li>
+                    <li x-show="$store.mobileNav.open" x-transition:enter.delay.450ms x-transition:leave.delay.300ms><a
+                            href="#portfolio" data-link="portfolio" class="navlink">Portfolio</a></li>
+                    <li x-show="$store.mobileNav.open" x-transition:enter.delay.600ms x-transition:leave.delay.150ms><a
+                            href="#blog" data-link="blog" class="navlink">Blog</a></li>
+                    <li x-show="$store.mobileNav.open" x-transition:enter.delay.750ms x-transition:leave.delay.100ms><a
+                            href="#contact" data-link="contact" class="navlink">Our team</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- flex -->
+
+    </header>
+    <section class="wow animate__fadeInUp" data-wow-duration="1s">
+        <div class="container">
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="card">
+                <h1>Top News</h1>
+                <div class="desc">
+                    <div class="img">
+                        <img src="images/07.jpg" alt="">
+                        <div class="">
+                            <h2>Something amazing you will never forget</h2>
+                            <h3>Jerry Eni</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="wow animate__fadeInUp" data-wow-duration="1s">
+
+        <div class="container">
+            <h1>Featured Posts</h1>
+
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="cards wow animate__fadeInUp" data-wow-duration="3s">
+
+                    <div class="gallery">
+                        <a target="_blank" href="images/07.jpg">
+                            <img src="images/07.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <div class="img">
+                                <img src="images/07.jpg" alt="">
+                                <div class="">
+                                    <h2>posted by</h2>
+                                    <h3>Jerry Eni</h3>
+                                </div>
+
+                            </div>
+                            <div class="write">
+                                <h1>
+                                    Lorem ipsum dolor sit amet.
+                                </h1>
+                                <p>Add a description of the image here
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque alias aut voluptas
+                                    incidunt
+                                    beatae? Qui excepturi cupiditate earum aliquid perferendis ullam impedit nesciunt
+                                    dolorem.
+                                    Aliquam excepturi inventore blanditiis repellat debitis.
+                                    lorem100
+                                </p>
+                            </div>
+
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+    <a href="#top" id="up"><i class="fa-solid fa-arrow-up"></i></a>
+    <footer>
+        <div class="copyright">
+            <p>Copyright &copy; <span class="presentyr">
+                    <script>
+                        document.querySelector('.presentyr').innerHTML = new Date().getFullYear();
+                    </script>
+                </span> JTech &SmallCircle; All Right Reserved</p>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('mobileNav', {
+            open: false,
+
+            toggle() {
+                this.open = !this.open
+            }
+        })
+    })
+</script>
+<script>
+    new Splide('.splide').mount();
+</script>
+
+</html>
