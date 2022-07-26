@@ -133,7 +133,10 @@ nav .nav-items ul > li a {
 a.active {
   color: var(--color-white);
 } 
-nav .nav-items ul > li a.active:after {
+nav .nav-items ul > li a.active::after {
+  color: var(--color-white);
+}
+nav .nav-items ul > li a.active::before {
   color: var(--color-white);
 }
 nav .search {
